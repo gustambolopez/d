@@ -8,8 +8,8 @@
   "type": "module",
   "scripts": {
     "deploy": "npm run build && wrangler pages deploy",
-    "build": "remix vite:build",
-    "dev": "remix vite:dev",
+    "build": "pnpm exec remix vite:build",
+    "dev": "pnpm exec remix vite:dev",
     "test": "vitest --run",
     "test:watch": "vitest",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
